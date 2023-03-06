@@ -2,7 +2,8 @@ function Header() {
   return (
     <header className="header">
       <nav className="nav">
-        <img className="nav-logo" src="public\react-icon.png" alt="react-icon"/>
+        <img className="nav-logo" src={`
+        ${process.env.PUBLIC_URL}/react-icon.png`} alt="react-icon"/>
         <ul className="nav-items">
           <li>Pricing</li>
           <li>About</li>
